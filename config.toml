@@ -1,0 +1,28 @@
+project_id = "tbwkhqvrqhagoswehrkx"
+
+[functions.extract-bol]
+verify_jwt = false
+
+[functions.fix-ticket-status]
+verify_jwt = false
+
+[functions.voice-to-text]
+verify_jwt = false
+
+[functions.parse-ticket-voice]
+verify_jwt = false
+
+[functions.pandadoc-signing]
+verify_jwt = false
+
+[functions.create-sample-documents]
+verify_jwt = false
+
+[functions.detected-kyb]
+verify_jwt = false
+
+[functions.detected-webhook]
+verify_jwt = false
+
+[functions.download-container-photos]
+verify_jwt = false
