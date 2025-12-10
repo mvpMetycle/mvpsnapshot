@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Metycle Design System - All colors in HSL format */
+
+@layer base {
+  :root {
+    /* Background & Foreground */
+    --background: 0 0% 98%;
+    --foreground: 183 41% 25%;
+
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 183 41% 25%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 183 41% 25%;
+
+    /* Primary - Metycle Dark Teal #255659 */
+    --primary: 183 41% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Metycle Mint #70F3DC */
+    --secondary: 169 83% 70%;
+    --secondary-foreground: 183 41% 25%;
+
+    /* Tertiary - Metycle Light Cyan #E2FAFF */
+    --tertiary: 190 100% 94%;
+    --tertiary-foreground: 183 41% 25%;
+
+    /* Muted */
+    --muted: 180 10% 94%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Accent - Using Secondary Mint */
+    --accent: 169 83% 70%;
+    --accent-foreground: 183 41% 25%;
+
+    /* Success */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Metycle Warning #F9B43A */
+    --warning: 38 94% 60%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Destructive/Error - Metycle Error #D41D1D */
+    --destructive: 0 76% 47%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Neutral - Metycle #393939 */
+    --neutral: 0 0% 22%;
+    --neutral-foreground: 0 0% 100%;
+
+    /* Border & Input */
+    --border: 180 10% 88%;
+    --input: 180 10% 88%;
+    --ring: 169 83% 70%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar - Light Mode */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 183 41% 25%;
+    --sidebar-primary: 183 41% 25%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 169 83% 90%;
+    --sidebar-accent-foreground: 183 41% 25%;
+    --sidebar-border: 180 10% 88%;
+    --sidebar-ring: 169 83% 70%;
+
+    /* Extended Primary Scale (Dark Teal) */
+    --primary-50: 166 20% 92%;
+    --primary-100: 171 21% 80%;
+    --primary-200: 181 14% 62%;
+    --primary-300: 181 14% 53%;
+    --primary-400: 183 23% 36%;
+    --primary-500: 183 41% 25%;
+    --primary-600: 183 41% 22%;
+    --primary-700: 183 42% 19%;
+    --primary-800: 183 43% 16%;
+    --primary-900: 184 53% 11%;
+
+    /* Extended Secondary Scale (Mint) */
+    --secondary-50: 163 50% 96%;
+    --secondary-100: 165 62% 90%;
+    --secondary-200: 168 68% 83%;
+    --secondary-300: 168 83% 76%;
+    --secondary-400: 169 83% 73%;
+    --secondary-500: 169 83% 70%;
+    --secondary-600: 169 83% 67%;
+    --secondary-700: 169 82% 62%;
+    --secondary-800: 169 81% 56%;
+    --secondary-900: 169 80% 52%;
+  }
+
+  .dark {
+    /* Background & Foreground */
+    --background: 183 41% 25%;
+    --foreground: 0 0% 98%;
+
+    /* Card */
+    --card: 183 38% 18%;
+    --card-foreground: 0 0% 98%;
+
+    /* Popover */
+    --popover: 183 38% 18%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Primary - Metycle Mint (swapped for dark mode) */
+    --primary: 169 83% 70%;
+    --primary-foreground: 183 41% 25%;
+
+    /* Secondary */
+    --secondary: 183 30% 32%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Tertiary */
+    --tertiary: 190 40% 25%;
+    --tertiary-foreground: 0 0% 98%;
+
+    /* Muted */
+    --muted: 183 30% 32%;
+    --muted-foreground: 180 10% 70%;
+
+    /* Accent */
+    --accent: 169 83% 70%;
+    --accent-foreground: 183 41% 25%;
+
+    /* Success */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning */
+    --warning: 38 94% 60%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Destructive/Error */
+    --destructive: 0 76% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Neutral */
+    --neutral: 0 0% 70%;
+    --neutral-foreground: 0 0% 15%;
+
+    /* Border & Input */
+    --border: 183 25% 35%;
+    --input: 183 25% 35%;
+    --ring: 169 83% 70%;
+
+    /* Sidebar - Dark Mode */
+    --sidebar-background: 183 38% 18%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 169 83% 70%;
+    --sidebar-primary-foreground: 183 41% 25%;
+    --sidebar-accent: 183 30% 32%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 183 25% 35%;
+    --sidebar-ring: 169 83% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+/* Metycle Leaflet Popup Styles */
+.metycle-popup .leaflet-popup-content-wrapper {
+  background: rgba(37, 86, 89, 0.85);
+  border: 2px solid #70F3DC;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.metycle-popup .leaflet-popup-tip {
+  background: rgba(37, 86, 89, 0.85);
+  border-left: 2px solid #70F3DC;
+  border-bottom: 2px solid #70F3DC;
+}
+
+.metycle-popup .leaflet-popup-close-button {
+  color: #70F3DC;
+}
+
+.metycle-popup .leaflet-popup-close-button:hover {
+  color: #E2FAFF;
+}
